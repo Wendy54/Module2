@@ -1,86 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="utf-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Module2-Assignment</title>
+
 </head>
 
 <style>
 
 
-
-div.container {
-	width: 100%;
-	margin:0px;
-	border:1px solid black;
-	line-height: 150%;
-	box-sizing: border-box;
-
+body {
+	background-color: #ffffff;
+	width:98%;
+	
 }
 div.header {
 text-align:center;
 padding-bottom: 15px;
-font-size:175%;
-background-color: #f7f8f9;
+font-family:Arial;
 }
 
-div {
+
+div.section1 {
 border:1px solid black;
 margin:1px;
-overflow: hidden;
+padding:0px 0px 0px 5px;
 background:grey;
 text-align: right;
-align-content: right
-
-box-sizing: border-box;
-
-
+align-content:right;
+float:left ;
+overflow:auto;
+}
+div.section2 {
+border:1px solid black;
+margin:1px;
+padding:0px 0px 0px 5px;
+background:grey;
+text-align: right;
+align-content:right;
+float:left ;
+overflow:auto;
+}
+div.section3 {
+border:1px solid black;
+margin:1px;
+padding:0px 0px 0px 5px;
+background:grey;
+text-align: right;
+align-content:right;
+float:left;
+overflow:auto;
 }
 
-
-name1 {
+span1 {
 	border:1px solid black;
-	padding-right: 10px;
-	padding-left: 10px;
-	text-align: right;
-	font-size: 120%;
+	padding-right:20px;
+	padding-left:20px;
+	padding-top: 0px;
 	 font-color:black;
-	 background:pink;
-	 align-content: right;
+	 background-color:pink;
+	 font-size: 175%;
+	 display: inline;
 
-
-
-}
-
-name2 {
+	 
+	}
+span2 {
 	border:1px solid black;
-	padding-right: 10px;
-	padding-left: 10px;
-	font-size: 120%;
-	 font-color:#f7f8f9;
-	  background:red;
-}
-name3 {
+	padding-right:40px;
+	padding-left:40px;
+	padding-top: 0px;
+	 font-color:white;
+	 background-color:red;
+ display: inline;
+	 font-size: 175%;
+	 
+	}
+	span3 {
 	border:1px solid black;
-	padding-right: 10px;
-	padding-left: 10px;
-	font-size: 120%;
+	padding-right:40px;
+	padding-left:40px;
+	padding-top: 0px;
 	 font-color:black;
-	  background:yellow;
-}
+	 background-color:yellow;
+	  display: inline;
+	 font-size: 175%;
+	 
+	}
 
 p {
 
 text-align:left;
 font-color:black;
-overflow: auto;
-
+overflow: hidden
+font-size: 100%;
+font-family:arial;
+ 
 }
+
 @media (min-width:992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3 {
+	 .col-lg-1, .col-lg-2, .col-lg-3 {
    
     border: 1px solid black;
   }
@@ -93,10 +114,12 @@ overflow: auto;
   .col-lg-3 {
     width: 99.99%;
   }
+ 
   
 }
 /********** Medium devices only****/
 @media (min-width: 768px) and (max-width: 991px) {
+	
   .col-md-1, .col-md-2, .col-md-3 {
    
     border: 1px solid black;
@@ -110,61 +133,36 @@ overflow: auto;
   .col-md-3 {
     width: 100%;
   }
-  
-}
-
-}
+</style>
 
 
+<body> 
+<div >
+<div class="header">
+	<h1>Our Menu</h1>
+</div>	
 
-
- </style>
-
-<body>
-<divclass="container">
-<div class="header"><h1>Our Menu</h1></header>
-
-
-
-
-<div class="row">
-  <div class="col-lg-3 col-md-6">
-  <div>
-  <name1 >Chicken</name1>
-  <p>Some text goes here. I wonder what happens if one is bigger. I mean really, really bigger. Like so big that it doesn't fit or maybe changes the box size.</p>
-  </div>
-  </div>
-  <div class="col-lg-3 col-md-6">
-  <div>
-	<name2 >Beef</name2>
-	<p>	Some text goes here	</p>
+	<div class="section1">
+	
+		<span1>Chicken</span1>
+		<p>Some text about fresh Chicken dishes goes here.</p>
 	</div>
+	
+
+	<div class="section2">
+	
+		<span2> Beef </span2>
+		<p>Some text about  yummy beef dishes goes here.</p>
+	
+</div>
+	<div class="section3">
+	
+		<span3>Sushi</span3>
+		<p>Text about super fresh sushi dishes goes here.</p>
 	</div>
-  <div class="col-lg-3 col-md-6">
-  <div>
-	<name3 >Sushi</name3>
-	<p>Some text goes here</p>	
-	</div> 
-	</div>
-  
+	
 </div>
 
-
-	
-			
-
-
-
-	
-	 
-
-
-
-	
-	
-</div.container>
 </body>
-
-
 
 </html>
